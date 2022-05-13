@@ -31,27 +31,29 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="manage.py" />
-    <Compile Include="Graph\admin.py" />
-    <Compile Include="Graph\apps.py" />
-    <Compile Include="Graph\migrations\__init__.py" />
-    <Compile Include="Graph\models.py" />
-    <Compile Include="Graph\tests.py" />
-    <Compile Include="Graph\views.py" />
-    <Compile Include="Graph\__init__.py" />
+    <Compile Include="StockChart\admin.py" />
+    <Compile Include="StockChart\apps.py" />
+    <Compile Include="StockChart\migrations\__init__.py" />
+    <Compile Include="StockChart\models.py" />
+    <Compile Include="StockChart\tests.py" />
+    <Compile Include="StockChart\views.py" />
+    <Compile Include="StockChart\__init__.py" />
     <Compile Include="ProjectCapital\__init__.py" />
     <Compile Include="ProjectCapital\settings.py" />
     <Compile Include="ProjectCapital\urls.py" />
     <Compile Include="ProjectCapital\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Graph\templates\Graph\index.html" />
+    <Content Include="StockChart\Static\StockChartStyleSheet.css" />
+    <Content Include="StockChart\templates\StockChart\index.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Graph\" />
-    <Folder Include="Graph\migrations\" />
-    <Folder Include="Graph\templates\" />
-    <Folder Include="Graph\templates\Graph\" />
+    <Folder Include="StockChart\" />
+    <Folder Include="StockChart\migrations\" />
+    <Folder Include="StockChart\templates\" />
+    <Folder Include="StockChart\Static\" />
+    <Folder Include="StockChart\templates\StockChart\" />
     <Folder Include="ProjectCapital\" />
   </ItemGroup>
   <ItemGroup>
