@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class MyApp1Config(AppConfig):
-    name = 'MyApp1'
+class GraphConfig(AppConfig):
+    name = 'Graph'
