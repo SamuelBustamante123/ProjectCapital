@@ -10,7 +10,11 @@ import urllib, base64
 
 class ApiData:
     url = "https://financialmodelingprep.com"
+<<<<<<< Updated upstream
     endpoints = "/api/v3/historical-price-full/AAPL"
+=======
+    endpoints = "/api/v3/historical-chart/1hour/AAPL?"
+>>>>>>> Stashed changes
     key = "ae9c5bf2fdac0c2231d11c104462cb31"
 
 def Get_Json(url):
@@ -25,14 +29,20 @@ def Get_Data():
 
 def index(request):
     serializedData = Get_Data()
-    historicalData = serializedData["historical"]
+    historicalData = serializedData
     historicalData.reverse()
     xValue = []
     yValue = []
 
     for day in historicalData:
+<<<<<<< Updated upstream
         date = dt.datetime.strptime(day["date"] ,'%Y-%m-%d').date()  
         xValue.append(date)
+=======
+        date = dt.datetime.strptime(day["date"] ,'%Y-%m-%d %H:%M:%S').date()
+        formatted = 10000*date.year + 100*date.month + date.day
+        xValue.append(formatted)
+>>>>>>> Stashed changes
         yValue.append(day["open"])
 
     plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
