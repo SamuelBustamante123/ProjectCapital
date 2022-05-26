@@ -1,8 +1,7 @@
-from django.conf.urls import include, url
-import StockChart.views
+from django.urls import include, re_path
 
-# Django processes URL patterns in the order they appear in the array
+import PlotlyTest.views
 
 urlpatterns = [
-    url(r'^$', StockChart.views.index, name='index')
+    re_path(r'^$', PlotlyTest.views.index, name='index')
 ]
