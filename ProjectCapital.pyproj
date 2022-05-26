@@ -32,29 +32,26 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="manage.py" />
-    <Compile Include="StockChart\admin.py" />
-    <Compile Include="StockChart\apps.py" />
-    <Compile Include="StockChart\migrations\__init__.py" />
-    <Compile Include="StockChart\models.py" />
-    <Compile Include="StockChart\tests.py" />
-    <Compile Include="StockChart\views.py" />
-    <Compile Include="StockChart\__init__.py" />
+    <Compile Include="PlotlyTest\admin.py" />
+    <Compile Include="PlotlyTest\apps.py" />
+    <Compile Include="PlotlyTest\migrations\__init__.py" />
+    <Compile Include="PlotlyTest\models.py" />
+    <Compile Include="PlotlyTest\views.py" />
+    <Compile Include="PlotlyTest\__init__.py" />
     <Compile Include="ProjectCapital\__init__.py" />
     <Compile Include="ProjectCapital\settings.py" />
     <Compile Include="ProjectCapital\urls.py" />
     <Compile Include="ProjectCapital\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="StockChart\Static\StockChartStyleSheet.css" />
-    <Content Include="StockChart\templates\StockChart\index.html" />
+    <Content Include="PlotlyTest\templates\PlotlyTest\index.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="StockChart\" />
-    <Folder Include="StockChart\migrations\" />
-    <Folder Include="StockChart\templates\" />
-    <Folder Include="StockChart\Static\" />
-    <Folder Include="StockChart\templates\StockChart\" />
+    <Folder Include="PlotlyTest\" />
+    <Folder Include="PlotlyTest\migrations\" />
+    <Folder Include="PlotlyTest\templates\" />
+    <Folder Include="PlotlyTest\templates\PlotlyTest\" />
     <Folder Include="ProjectCapital\" />
   </ItemGroup>
   <ItemGroup>
